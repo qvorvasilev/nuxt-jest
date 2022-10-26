@@ -1,7 +1,7 @@
 <template>
   <v-card class="pa-5 mx-auto my-auto" width="500px" max-width="100%">
     <div class="d-flex align-center justify-space-between mb-2">
-      <h1 data-testid="title-value">
+      <h1 v-if="title" data-testid="title-value">
         {{ title }}
       </h1>
 
@@ -29,7 +29,7 @@
 import { Component, Vue, Prop } from 'nuxt-property-decorator'
 @Component
 export default class Card extends Vue {
-  @Prop({ default: '' }) readonly title!: string
+  @Prop() readonly title?: string
 
   languages = [
     {
