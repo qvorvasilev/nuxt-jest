@@ -7,10 +7,10 @@ module.exports = {
     'tsx'
   ],
   transform: {
-    '\\.(ts|tsx)$': '<rootDir>/node_modules/ts-jest',
-    '.*\\.(vue)$': '<rootDir>/node_modules/vue-jest'
-    // '.*\\.(vue)$': '<rootDir>/node_modules/jest-vue',
+    '\\.(ts|tsx)$': '<rootDir>/node_modules/ts-jest/preprocessor.js',
+    '.*\\.(vue)$': '<rootDir>/node_modules/jest-vue'
     // '^.+\\.js$': '<rootDir>/node_modules/babel-jest'
+    // '.*\\.(vue)$': '<rootDir>/node_modules/vue-jest'
     // '.*\\.(vue)$': '<rootDir>/node_modules/vue-jest'
   },
   verbose: true,
